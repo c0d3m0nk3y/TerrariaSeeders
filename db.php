@@ -1,10 +1,10 @@
 <?php
 	include_once('/config/live-config.php');
-	
-	$server = 'localhost';
-	$username = 'user';
-	$password = 'password';
-	$database = 'notes';
+
+	$server = DB_HOST;
+	$username = DB_USER;
+	$password = DB_PASS;
+	$database = DB_NAME;
 	
 	try {
 		$db = new PDO("mysql:host=$server;dbname=$database;", $username, $password);
