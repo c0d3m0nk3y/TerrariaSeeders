@@ -2,7 +2,7 @@
 	session_start();
 	
 	if(isset($_SESSION['id'])) {
-		header("Location: notes.php");
+		header("Location: main.php");
 	}
 ?>
 
@@ -11,7 +11,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Notes</title>
+	<title>Terraria Seeders</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
 	
@@ -22,7 +22,7 @@
 
 <body>
 	<div class="header">
-		<a href="index.php">Notes</a>
+		<a href="index.php">Terraria Seeders</a>
 	</div>
 	
 	<h1>Please Login or Register</h1>

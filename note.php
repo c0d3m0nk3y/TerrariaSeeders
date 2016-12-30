@@ -15,7 +15,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Note</title>
+	<title>Terraria Seeders</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
 	
@@ -26,11 +26,11 @@
 
 <body>
 	<div class="header">
-		<a href="index.php">Notes</a>
+		<a href="index.php">Terraria Seeders</a>
 	</div>
 	
 	<?php
-		$records = $db->prepare('SELECT * FROM notes WHERE id = :id');
+		$records = $db->prepare('SELECT * FROM seeds WHERE id = :id');
 		$records->bindParam(':id', $id);
 		$records->execute();
 		$results = $records->fetch(PDO::FETCH_ASSOC);
@@ -39,11 +39,11 @@
 
 		if(count($results) > 0) {
 			$title = $results['title'];
-			$note = $results['note'];
+			$seed = $results['seed'];
 			$tags = $results['tags'];
 			$date = $results['date'];
 
-			echo "<p><b>$title</b></p><p>$note</p><p><i>$tags</i></p><p>$date</p>";
+			echo "<p><b>$title</b></p><p>$seed</p><p><i>$tags</i></p><p>$date</p>";
 		} else {
 			$message = "Something went wrong getting this note.  Sorry about that!";
 		}

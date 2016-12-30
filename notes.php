@@ -19,7 +19,7 @@
 <head lang="en">
 	<meta charset="utf-8">
 
-	<title>Notes</title>
+	<title>Terraria Seeders</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
 	
@@ -30,7 +30,7 @@
 
 <body>
 	<div class="header">
-		<a href="index.php">Notes</a>
+		<a href="index.php">Terraria Seeders</a>
 	</div>
 
 	<a href="addnote.php">Add A Note</a>
@@ -40,30 +40,30 @@
 	<br /><br />
 
 	<div style="overflow-x:auto">
-		<table id="notes">
+		<table id="seeds">
 			<tr>
 				<th style='width:20%'>Title</th>
-				<th>Note</th>
+				<th>Seed</th>
 				<th style='width:10%'>Tags</th>
 				<th style='width:10%'>Date</th>
 				<th style='width:5%' />
 			</tr>
 
 			<?php
-				$notes = "";
-				$sql = 'SELECT * FROM notes ORDER BY id ASC';
+				$seeds = "";
+				$sql = 'SELECT * FROM seeds ORDER BY id ASC';
 			    foreach ($db->query($sql) as $row) {
 			    	$id = $row['id'];
 			    	$title = $row['title'];
-			    	$note = substr($row['note'], 0, 100);
-			    	$note .= " ...";
+			    	$seed = substr($row['seed'], 0, 100);
+			    	$seed .= " ...";
 					$tags = $row['tags'];
 					$date = $row['date'];
 
-					$notes .= "<tr><td>$title</td><td>$note</td><td>$tags</td><td>$date</td><td><a href='note.php?id=$id'>Open</td></tr>";
+					$seeds .= "<tr><td>$title</td><td>$seed</td><td>$tags</td><td>$date</td><td><a href='seed.php?id=$id'>Open</td></tr>";
 			    }
 
-			    echo $notes;
+			    echo $seeds;
 			?>
 		</table>
 	</div>

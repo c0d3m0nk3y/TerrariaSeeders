@@ -51,23 +51,23 @@ input[type="submit"]:hover {
 	text-decoration:none;
 }
 
-#notes {
+#seeds {
     /*font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;*/
     border-collapse: collapse;
     width: 100%;
 }
 
-#notes td, #notes th {
+#seeds td, #seeds th {
     border: 1px solid #ddd;
     text-align: left;
     padding: 8px;
 }
 
-#notes tr:nth-child(even){background-color: #f2f2f2}
+#seeds tr:nth-child(even){background-color: #f2f2f2}
 
-#notes tr:hover {background-color: #FFB8F0;}
+#seeds tr:hover {background-color: #FFB8F0;}
 
-#notes th {
+#seeds th {
     padding-top: 12px;
     padding-bottom: 12px;
     background-color: #FFB8F0;

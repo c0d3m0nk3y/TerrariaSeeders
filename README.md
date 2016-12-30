@@ -1,1 +1,1 @@
-A shared notepad written in PHP.
+Sharing Terraria Seeds!

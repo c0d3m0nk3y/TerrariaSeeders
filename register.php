@@ -8,7 +8,7 @@
 
 	// redirect if logged in
 	if(isset($_SESSION['id'])) {
-		header("Location: notes.php");
+		header("Location: main.php");
 	}
 
 	require 'db.php';
@@ -37,7 +37,7 @@
 <head lang="en">
 	<meta charset="utf-8">
 	
-	<title>Register for notes</title>
+	<title>Terraria Seeders</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
 	
@@ -47,7 +47,7 @@
 </head>
 <body>
 	<div class="header">
-		<a href="index.php">Notes</a>
+		<a href="index.php">Terraria Seeders</a>
 	</div>
 	
 	<?php if(!empty($message)): ?>
