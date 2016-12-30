@@ -1,5 +1,6 @@
 <?php
-	// $db = mysqli_connect("localhost", "user", "password", "notes");
+	include_once('/config/live-config.php');
+	
 	$server = 'localhost';
 	$username = 'user';
 	$password = 'password';
