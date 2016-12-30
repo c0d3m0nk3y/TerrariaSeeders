@@ -33,7 +33,7 @@
 		<a href="index.php">Terraria Seeders</a>
 	</div>
 
-	<a href="addnote.php">Add A Note</a>
+	<a href="addseed.php">Add A Seed</a>
 	-
 	<a href="logout.php"><?php echo $results['username'] ?> Logout</a>
 
