@@ -1,5 +1,5 @@
 <?php
-	require_once('/config/live-config.php');
+	require_once('config/live-config.php');
 
 	$server = DB_HOST;
 	$username = DB_USER;
